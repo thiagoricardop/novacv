@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E3192"/>
+      <stop offset="0.55" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#E91E63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="220" fill="white" fill-opacity="0.08"/>
+  <circle cx="1050" cy="520" r="240" fill="white" fill-opacity="0.08"/>
+  <text x="88" y="270" fill="white" font-family="Arial, sans-serif" font-size="74" font-weight="700">Nova Comunicação Visual</text>
+  <text x="88" y="350" fill="white" font-family="Arial, sans-serif" font-size="38" font-weight="500">Comunicação visual em Pará de Minas</text>
+  <text x="88" y="410" fill="#FFD84D" font-family="Arial, sans-serif" font-size="34" font-weight="700">Plaquinhas PIX • Sinalização • Troféus • Medalhas</text>
+</svg>
