@@ -11,7 +11,7 @@ export const siteConfig = {
     "Plaquinhas PIX personalizadas, placas de sinalização, troféus, medalhas e comunicação visual para empresas em Pará de Minas e região.",
   phone: "(37) 3236-2730",
   mobile: "(37) 99665-2237",
-  whatsappNumber: "5537996652237",
+  whatsappNumber: "553732362730",
   instagramHandle: "@_nova_cv_",
   instagramUrl: "https://www.instagram.com/_nova_cv_/",
   address: {
