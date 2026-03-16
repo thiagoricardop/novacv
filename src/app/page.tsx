@@ -3,7 +3,6 @@ import { ArrowRight, CheckCircle2, Clock3, Instagram, MapPin, Phone } from "luci
 
 import { PortfolioCard } from "@/components/cards/portfolio-card";
 import { ServiceCard } from "@/components/cards/service-card";
-import { TestimonialCard } from "@/components/cards/testimonial-card";
 import { QuoteForm } from "@/components/quote-form";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Reveal } from "@/components/ui/reveal";
@@ -11,10 +10,10 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import {
   differentiators,
   heroHighlights,
+  instagramCards,
   portfolioItems,
   processSteps,
   services,
-  testimonials,
 } from "@/data/content";
 import { buildMetadata, getWhatsAppLink, siteConfig } from "@/lib/site";
 
@@ -231,38 +230,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24">
-        <div className="section-shell space-y-12">
-          <SectionHeading
-            eyebrow="Depoimentos"
-            title="Clientes locais reconhecem a qualidade e o atendimento"
-            description="Relatos inspirados em negócios e organizadores da região."
-            align="center"
-          />
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={testimonial.name} {...testimonial} delay={index * 0.05} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <div className="section-shell">
+        <div className="section-divider" />
+      </div>
 
       <section className="py-16 sm:py-20 lg:py-24">
-        <div className="section-shell rounded-[2rem] bg-brand-gradient p-8 text-white shadow-glow sm:p-10">
-          <SectionHeading
-            eyebrow="Instagram"
-            title="Veja trabalhos reais e novidades no perfil da Nova CV"
-            description="Acompanhe projetos entregues para empresas e eventos da região e inspire seu próximo pedido."
-            theme="inverse"
-          />
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href={siteConfig.instagramUrl} className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-blue transition hover:brightness-95">
-              <Instagram className="h-4 w-4" />
-              Acompanhar no Instagram
-            </Link>
-            <ButtonLink href="/portfolio" variant="ghost" className="border-white/30 text-white hover:bg-white/10">
-              Ver portfólio completo
-            </ButtonLink>
+        <div className="section-shell grid gap-6 rounded-[2rem] bg-brand-gradient p-8 text-white shadow-glow sm:p-10 lg:grid-cols-[1fr_.95fr] lg:items-center">
+          <div>
+            <SectionHeading
+              eyebrow="Instagram"
+              title="Veja trabalhos reais e novidades no perfil da Nova CV"
+              description="Acompanhe projetos entregues para empresas e eventos da região e inspire seu próximo pedido."
+              theme="inverse"
+            />
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href={siteConfig.instagramUrl} className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-blue transition hover:brightness-95">
+                <Instagram className="h-4 w-4" />
+                Acompanhar no Instagram
+              </Link>
+              <ButtonLink href="/portfolio" variant="ghost" className="border-white/30 text-white hover:bg-white/10">
+                Ver portfólio completo
+              </ButtonLink>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            {instagramCards.slice(0, 2).map((card) => (
+              <article key={card.title} className="rounded-3xl border border-white/15 bg-white/10 p-4 backdrop-blur">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#FFD84D]">Destaque</p>
+                <h3 className="mt-2 font-display text-lg font-bold text-white">{card.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-white/85">{card.text}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -323,7 +322,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-24">
+      <div className="section-shell">
+        <div className="section-divider" />
+      </div>
+
+      <section className="py-16 sm:py-20 lg:py-24">
         <div className="section-shell grid gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-start">
           <div className="space-y-8">
             <SectionHeading

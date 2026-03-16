@@ -223,32 +223,7 @@ export const processSteps = [
 	"Entrega",
 ];
 
-export const testimonials: TestimonialItem[] = [
-	{
-		name: "Mariana Alves",
-		business: "Restaurante Sabor Mineiro",
-		city: "Pará de Minas",
-		text: "As plaquinhas de PIX ficaram lindas e super resistentes. Atendimento rápido e entrega dentro do prazo.",
-	},
-	{
-		name: "Carlos Henrique",
-		business: "Liga Esportiva Regional",
-		city: "Pará de Minas",
-		text: "Troféus e medalhas com acabamento impecável. Nosso evento ficou muito mais profissional com a Nova CV.",
-	},
-	{
-		name: "Patrícia Souza",
-		business: "Colégio Integração",
-		city: "Itaúna",
-		text: "Solicitamos placas de sinalização para a escola e o resultado foi excelente. Equipe muito atenciosa.",
-	},
-	{
-		name: "Rogério Martins",
-		business: "Loja Ponto Certo",
-		city: "Pará de Minas",
-		text: "A comunicação visual da loja mudou completamente. Mais identidade, mais confiança e mais vendas.",
-	},
-];
+export const testimonials: TestimonialItem[] = [];
 
 export const instagramCards = [
 	{
