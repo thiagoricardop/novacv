@@ -47,6 +47,14 @@ export function buildMetadata({
     title,
     description,
     keywords: siteConfig.keywords,
+    icons: {
+      icon: [
+        { url: "/logo.png", type: "image/png" },
+        { url: "/logo.svg", type: "image/svg+xml" },
+      ],
+      shortcut: "/logo.png",
+      apple: "/logo.png",
+    },
     alternates: {
       canonical: url,
     },
