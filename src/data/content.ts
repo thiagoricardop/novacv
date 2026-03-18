@@ -156,7 +156,7 @@ export const portfolioItems: PortfolioItem[] = [
 		category: "Troféus",
 		description: "Peças personalizadas para torneios escolares e corporativos com visual de destaque.",
 		imageHint: "Troféus personalizados para evento esportivo",
-		images: ["/TrofeuEsportivo.png", "/TrofeuEsportivo2.jpg", "/TrofeuMulher.jpg", "/TrofeuTorneio.png", "/Trofeu3.jpg"],
+		images: ["/TrofeuEsportivo2.jpg", "/TrofeuMulher.jpg", "/TrofeuTorneio.png", "/Trofeu3.jpg"],
 		gradient: "from-[#2E3192] via-[#4F46E5] to-[#60A5FA]",
 		size: "lg",
 	},
