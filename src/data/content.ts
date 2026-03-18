@@ -37,6 +37,7 @@ export type PortfolioItem = {
 	category: string;
 	description: string;
 	imageHint: string;
+	images?: string[];
 	gradient: string;
 	size: "sm" | "md" | "lg";
 };
@@ -146,6 +147,7 @@ export const portfolioItems: PortfolioItem[] = [
 		category: "Plaquinhas PIX",
 		description: "Modelos em acrílico com design vibrante para agilizar pagamentos e valorizar o ponto de venda.",
 		imageHint: "Plaquinha PIX personalizada em balcão comercial",
+		images: ["/PlaquinhaPIX.jpg"],
 		gradient: "from-[#2E3192] via-[#7C3AED] to-[#E91E63]",
 		size: "md",
 	},
@@ -154,38 +156,25 @@ export const portfolioItems: PortfolioItem[] = [
 		category: "Troféus",
 		description: "Peças personalizadas para torneios escolares e corporativos com visual de destaque.",
 		imageHint: "Troféus personalizados para evento esportivo",
+		images: ["/TrofeuEsportivo.png", "/TrofeuEsportivo2.jpg", "/TrofeuMulher.jpg", "/TrofeuTorneio.png", "/Trofeu3.jpg"],
 		gradient: "from-[#2E3192] via-[#4F46E5] to-[#60A5FA]",
 		size: "lg",
-	},
-	{
-		title: "Medalhas para corrida e ranking",
-		category: "Medalhas",
-		description: "Medalhas com acabamento premium para valorizar cada participante e patrocinador.",
-		imageHint: "Medalhas personalizadas para corrida e torneio",
-		gradient: "from-[#E91E63] via-[#EC4899] to-[#F59E0B]",
-		size: "sm",
 	},
 	{
 		title: "Placas de segurança e hidrante",
 		category: "Sinalização",
 		description: "Sinalização técnica para empresas com foco em organização, segurança e conformidade.",
 		imageHint: "Placas de sinalização de segurança empresarial",
+		images: ["/Normasdeseguranca.jpg", "/SecuritySigns1.jpg", "/SecuritySigns2.jpg", "/SegurancaElevador.jpg", "/banheiroF.jpg", "/BanheiroM.jpg"],
 		gradient: "from-[#1E293B] via-[#2E3192] to-[#4F46E5]",
 		size: "lg",
-	},
-	{
-		title: "Comunicação visual para lojas",
-		category: "Empresas",
-		description: "Materiais visuais para reforçar marca e melhorar experiência do cliente no ambiente comercial.",
-		imageHint: "Comunicação visual para loja e comércio local",
-		gradient: "from-[#F43F5E] via-[#E91E63] to-[#7C3AED]",
-		size: "md",
 	},
 	{
 		title: "Premiações corporativas",
 		category: "Eventos corporativos",
 		description: "Troféus e placas de reconhecimento para campanhas internas e eventos empresariais.",
 		imageHint: "Prêmios corporativos personalizados",
+		images: ["/PremiacaoCorporativa.png"],
 		gradient: "from-[#0EA5E9] via-[#2E3192] to-[#7C3AED]",
 		size: "sm",
 	},
@@ -194,22 +183,16 @@ export const portfolioItems: PortfolioItem[] = [
 		category: "Comunicação visual",
 		description: "Adesivos de alto impacto para copos, brindes e materiais promocionais com ótimo acabamento.",
 		imageHint: "Adesivo DTF UV com aplicação em produtos",
+		images: ["/Adesivo.png", "/Adesivo2.png"],
 		gradient: "from-[#0F172A] via-[#2E3192] to-[#EC4899]",
 		size: "md",
-	},
-	{
-		title: "Plaquinhas de PIX para balcão",
-		category: "Plaquinhas PIX",
-		description: "Soluções para acelerar pagamento e melhorar a experiência do cliente no caixa.",
-		imageHint: "Plaquinhas de PIX personalizadas para comércio",
-		gradient: "from-[#1D4ED8] via-[#7C3AED] to-[#E91E63]",
-		size: "sm",
 	},
 	{
 		title: "Medalhas e troféus para torneios",
 		category: "Eventos esportivos",
 		description: "Kits completos para premiação esportiva com identidade do campeonato.",
 		imageHint: "Premiação para evento esportivo escolar e regional",
+		images: ["/Medalhas.jpg", "/medalhas2.jpg", "/TrofeuTorneio.png", "/TrofeuEsportivo2.jpg"],
 		gradient: "from-[#0B132B] via-[#1C2541] to-[#E91E63]",
 		size: "lg",
 	},

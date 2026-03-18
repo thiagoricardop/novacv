@@ -9,9 +9,9 @@ export const siteConfig = {
   title: "Nova Comunicação Visual | Comunicação visual em Pará de Minas",
   description:
     "Plaquinhas PIX personalizadas, placas de sinalização, troféus, medalhas e comunicação visual para empresas em Pará de Minas e região.",
-  phone: "(37) 3236-2730",
+  phone: "(37) 3232-2237",
   mobile: "(37) 99665-2237",
-  whatsappNumber: "553732362730",
+  whatsappNumber: "553732322237",
   instagramHandle: "@_nova_cv_",
   instagramUrl: "https://www.instagram.com/_nova_cv_/",
   address: {
@@ -49,11 +49,11 @@ export function buildMetadata({
     keywords: siteConfig.keywords,
     icons: {
       icon: [
-        { url: "/logo.png", type: "image/png" },
+        { url: "/logo.svg", type: "image/svg" },
         { url: "/logo.svg", type: "image/svg+xml" },
       ],
-      shortcut: "/logo.png",
-      apple: "/logo.png",
+      shortcut: "/logo.svg",
+      apple: "/logo.svg",
     },
     alternates: {
       canonical: url,

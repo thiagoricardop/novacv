@@ -1,10 +1,11 @@
 import Link from "next/link";
 
+import { PortfolioCard } from "@/components/cards/portfolio-card";
 import { ServiceCard } from "@/components/cards/service-card";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { audienceItems, differentiators, processSteps, services } from "@/data/content";
+import { audienceItems, differentiators, portfolioItems, processSteps, services } from "@/data/content";
 import { buildMetadata, getWhatsAppLink } from "@/lib/site";
 
 export const metadata = buildMetadata({
@@ -69,6 +70,24 @@ export default function ProdutosPage() {
 						{services.map((service, index) => (
 							<ServiceCard key={service.title} {...service} delay={index * 0.04} />
 						))}
+					</div>
+				</div>
+			</section>
+
+			<section className="pb-20 sm:pb-24">
+				<div className="section-shell space-y-10">
+					<SectionHeading
+						eyebrow="Catálogo visual"
+						title="Veja exemplos reais dos principais produtos"
+						description="Itens semelhantes ficam na mesma box com navegação de imagens para facilitar comparação de acabamentos e estilos."
+					/>
+					<div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+						{portfolioItems.slice(0, 6).map((item, index) => (
+							<PortfolioCard key={item.title} {...item} delay={index * 0.04} />
+						))}
+					</div>
+					<div className="flex justify-center">
+						<ButtonLink href="/portfolio">Ver portfólio completo</ButtonLink>
 					</div>
 				</div>
 			</section>
