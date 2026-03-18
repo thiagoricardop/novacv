@@ -28,12 +28,15 @@ export function PortfolioMasonry({ items }: PortfolioMasonryProps) {
 
   return (
     <div className="space-y-8">
-      <div className="flex flex-wrap gap-2">
+      <div className="space-y-3">
+        <p className="text-sm font-semibold text-brand-dark">Filtrar por categoria</p>
+        <div className="flex flex-wrap gap-2">
         {categories.map((category) => (
           <button
             key={category}
             type="button"
             onClick={() => setActiveCategory(category)}
+            aria-pressed={activeCategory === category}
             className={cn(
               "rounded-full border px-4 py-2 text-sm font-semibold transition",
               activeCategory === category
@@ -44,6 +47,10 @@ export function PortfolioMasonry({ items }: PortfolioMasonryProps) {
             {category}
           </button>
         ))}
+        </div>
+        <p className="text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
+          {filteredItems.length} projeto(s) exibido(s)
+        </p>
       </div>
 
       <div className="columns-1 gap-6 md:columns-2 xl:columns-3">
